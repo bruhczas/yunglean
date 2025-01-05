@@ -1,0 +1,72 @@
+
+h1{
+	font-family: 'Unbounded', cursive;
+	text-shadow: 0 0 2px #000000;
+	clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+	text-indent: 50px;
+	transform: rotateY(45deg);
+	animation: rotateAnimation 6s linear infinite;
+	
+}
+
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+}
+
+
+
+
+h4{
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+	text-indent: 50px;
+}
+
+h2{
+	
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding: 70px 0;
+	
+	
+}
+
+h3{
+	
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	
+}
+
+img{
+	
+	
+	
+	
+}
+
+button{
+	
+	
+	color: #000000;
+	font-size: 19px;
+	padding: 15px 60px;
+	cursor: pointer
+	color: #00000000;
+}
+
+p{
+	
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 70px;
+	
+	
+}
