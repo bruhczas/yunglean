@@ -5,7 +5,7 @@ const app = express();
 const PORT = 3000;
 
 const genAI = new GoogleGenerativeAI("AIzaSyAANGrHEUNoKvbhqfDiHbfKPzqt8Dc3Olo");
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
 
 app.use(express.json()); 
 
