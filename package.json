@@ -9,5 +9,6 @@
   "dependencies": {
     "express": "^4.18.2",
     "node-fetch": "^2.6.1"
+    "@google/generative-ai": "^gemini-2.0-flash-exp"  
   }
 }
