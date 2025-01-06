@@ -1,13 +1,14 @@
 const express = require('express');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
+const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-const genAI = new GoogleGenerativeAI("AIzaSyAANGrHEUNoKvbhqfDiHbfKPzqt8Dc3Olo");
+const genAI = new GoogleGenerativeAI("AIzaSyAANGrHEUNoKvbhqfDiHbfKPzqt8Dc3Olo"); 
 const model = genAI.getGenerativeModel({ model: "0.21.0" });
 
-app.use(express.json()); 
+app.use(express.json());
 
 
 app.post('/chat', async (req, res) => {
@@ -22,6 +23,7 @@ app.post('/chat', async (req, res) => {
     }
 });
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
